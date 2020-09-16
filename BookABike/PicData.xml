@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/Images/p1.jpg</ImageUrl>
+    
+
+    <Impressions>10</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/p2.jpg</ImageUrl>
+    
+
+    <Impressions>20</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/p3.jpg</ImageUrl>
+    
+
+    <Impressions>40</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/p4.jpg</ImageUrl>
+
+
+    <Impressions>40</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/Images/p5.jpg</ImageUrl>
+
+
+    <Impressions>40</Impressions>
+  </Ad>
+</Advertisements>

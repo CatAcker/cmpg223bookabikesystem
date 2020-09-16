@@ -1,0 +1,271 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7714063F-A0D0-4F89-9A83-BF20BEC93CBA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BookABike</RootNamespace>
+    <AssemblyName>BookABike</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AdminStaff.aspx" />
+    <Content Include="App_Data\UsersDB.mdf" />
+    <Content Include="App_Data\UsersDB_log.ldf">
+      <DependentUpon>UsersDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="BikeStations.aspx" />
+    <Content Include="Bookings.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="Images\39579edb9a77ad4.jpg" />
+    <Content Include="Images\6908306-cycling-with-nature.jpg" />
+    <Content Include="Images\7039786-new-york-city-desktop-wallpaper-widescreen.jpg" />
+    <Content Include="Images\About.png" />
+    <Content Include="Images\American-Express-Symbol.jpg" />
+    <Content Include="Images\BikeStations.jpg" />
+    <Content Include="Images\bookings.png" />
+    <Content Include="Images\bookingspage.png" />
+    <Content Include="Images\Checkout&amp;Return.jpg" />
+    <Content Include="Images\Checkout&amp;Return2.jpg" />
+    <Content Include="Images\ContactUs.png" />
+    <Content Include="Images\HIW.jpg" />
+    <Content Include="Images\HIW_burned.png" />
+    <Content Include="Images\l1.jpg" />
+    <Content Include="Images\l10.jpg" />
+    <Content Include="Images\l11.jpg" />
+    <Content Include="Images\l12.jpg" />
+    <Content Include="Images\l13.jpg" />
+    <Content Include="Images\l14.jpg" />
+    <Content Include="Images\l15.jpg" />
+    <Content Include="Images\l16.jpg" />
+    <Content Include="Images\l17.jpg" />
+    <Content Include="Images\l18.jpg" />
+    <Content Include="Images\l19.jpg" />
+    <Content Include="Images\l2.jpg" />
+    <Content Include="Images\l20.jpg" />
+    <Content Include="Images\l21.jpg" />
+    <Content Include="Images\l22.jpg" />
+    <Content Include="Images\l23.jpg" />
+    <Content Include="Images\l24.jpg" />
+    <Content Include="Images\l25.jpg" />
+    <Content Include="Images\l26.jpg" />
+    <Content Include="Images\l27.jpg" />
+    <Content Include="Images\l28.jpg" />
+    <Content Include="Images\l29.jpg" />
+    <Content Include="Images\l3.jpg" />
+    <Content Include="Images\l30.jpg" />
+    <Content Include="Images\l31.jpg" />
+    <Content Include="Images\l32.jpg" />
+    <Content Include="Images\l33.jpg" />
+    <Content Include="Images\l34.jpg" />
+    <Content Include="Images\l35.jpg" />
+    <Content Include="Images\l36.jpg" />
+    <Content Include="Images\l37.jpg" />
+    <Content Include="Images\l38.jpg" />
+    <Content Include="Images\l39.jpg" />
+    <Content Include="Images\l4.jpg" />
+    <Content Include="Images\l40.jpg" />
+    <Content Include="Images\l41.jpg" />
+    <Content Include="Images\l42.jpg" />
+    <Content Include="Images\l43.jpg" />
+    <Content Include="Images\l44.jpg" />
+    <Content Include="Images\l5.jpg" />
+    <Content Include="Images\l6.jpg" />
+    <Content Include="Images\l7.jpg" />
+    <Content Include="Images\l8.jpg" />
+    <Content Include="Images\l9.jpg" />
+    <Content Include="Images\Mastercard-PNG-File.png" />
+    <Content Include="Images\mountain-bike-background_1555850.jpg" />
+    <Content Include="Images\p1.jpg" />
+    <Content Include="Images\p2.jpg" />
+    <Content Include="Images\p3.jpg" />
+    <Content Include="Images\p4.jpg" />
+    <Content Include="Images\p5.jpg" />
+    <Content Include="Images\PayPalLogo.png" />
+    <Content Include="Images\register.jpg" />
+    <Content Include="Main.aspx" />
+    <Content Include="PicData.xml" />
+    <Content Include="Register.aspx" />
+    <Content Include="ResetPassword.aspx" />
+    <Content Include="ResetPassword2.aspx" />
+    <Content Include="SS1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStaff.aspx.cs">
+      <DependentUpon>AdminStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminStaff.aspx.designer.cs">
+      <DependentUpon>AdminStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BikeStations.aspx.cs">
+      <DependentUpon>BikeStations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BikeStations.aspx.designer.cs">
+      <DependentUpon>BikeStations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bookings.aspx.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bookings.aspx.designer.cs">
+      <DependentUpon>Bookings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword2.aspx.cs">
+      <DependentUpon>ResetPassword2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPassword2.aspx.designer.cs">
+      <DependentUpon>ResetPassword2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65098</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65098/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

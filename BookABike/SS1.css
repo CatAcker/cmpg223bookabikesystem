@@ -1,0 +1,62 @@
+﻿body 
+{
+
+}
+.button
+{
+    border-radius : 25px;
+
+}
+
+
+    .button:hover {
+        box-shadow: 0 12px 16px 0 yellowgreen, 0 17px 50px 0 green;
+        transform: rotateZ(360deg);
+        width: 191px;
+        height: 46px;
+        background-color: black;
+        animation-name: example;
+        animation-delay: 10s;
+        animation-duration: 4s;
+        transition: width 2s, height 4s;
+
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+
+        .button:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+    .button:active {
+        box-shadow: 0 12px 16px 0 red, 0 17px 50px 0 green;
+        transform: perspective();
+        width: 191px;
+        height: 46px;
+        background-color: red;
+        animation-name: example;
+        animation-delay: 10s;
+        animation-duration: 4s;
+        transition: width 2s;
+        transition: width 2s, height 4s;
+    }
+    .button::after {
+
+    }
+
