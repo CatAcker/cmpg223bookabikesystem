@@ -12,6 +12,7 @@ namespace BookABike
     public partial class Main : System.Web.UI.Page
     {
         //Cathryn
+        static bool doNothinTest;
         static string staffStatus = "";
         static SqlConnection connectDB;
         static SqlCommand commandDB;
